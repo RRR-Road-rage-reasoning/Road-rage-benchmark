@@ -131,8 +131,7 @@ python train_mlp.py
 
 Test Results(Example)
 
-<img width="945" height="413" alt="image" src="https://github.com/user-attachments/assets/3097b3bd-9bb9-46a8-bdfd-9f86acd3046c" />
-
+<img width="977" height="466" alt="image" src="https://github.com/user-attachments/assets/aa188e38-b614-4c68-99be-5106147dcb96" />
 
 ---
 
