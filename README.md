@@ -100,21 +100,6 @@ This design balances classification performance and real-time efficiency.
 
 ---
 
-## 🎯 Task Definition
-
-The task is formulated as **independent binary classification** for three hazardous driving behavior categories.  
-Each category is annotated using **0/1 binary labels**, where `1` indicates the presence of a hazardous behavior.
-
-| Category ID | Hazardous Behavior  | Label = 0 (Normal) | Label = 1 (Hazardous) |
-|------------ |---------------------|--------------------|-----------------------|
-| 1           | Dangerous Behavior  | Normal driving     | Dangerous driving     |
-| 2           | Aggressive Behavior | Normal driving     | Aggressive driving    |
-| 3           | Obstructive Behavior| Normal driving     | Obstructive driving   |
-
-Each hazardous behavior category is detected **independently**, while sharing the same visual feature extraction pipeline.
-
----
-
 ## ⚙️ Environment Setup
 
 ### Requirements
