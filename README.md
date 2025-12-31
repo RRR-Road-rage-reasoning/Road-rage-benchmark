@@ -1,5 +1,6 @@
 # Road-rage-benchmark
 Road rage benchmark focuses on pre-response road rage regulation by reasoning about situational triggers before aggressive behaviors occur. We introduce Road Rage Reasoning tasks, RoadRageBench with rich annotations, extensive VLM evaluations, and a real-time VLM-based reasoning framework to advance proactive in-car safety systems.
+<img width="2475" height="1120" alt="fig3-framework_01" src="https://github.com/user-attachments/assets/b438fd22-4b74-45b5-88ed-b33139a191f7" />
 
 ## 🧠Framework Overview
 
