@@ -37,6 +37,8 @@ This design balances classification performance and real-time efficiency.
 
 <img width="2475" height="1120" alt="fig3-framework_01" src="https://github.com/user-attachments/assets/73fa6b98-7ab6-41be-ae7e-b186a324dd09" />
 
+Framework overview
+
 ---
 
 ## 🎯 Task Definition
