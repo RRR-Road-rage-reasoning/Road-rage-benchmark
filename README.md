@@ -1,3 +1,10 @@
+# Road-Rage-Benchmark
+
+**Road-Rage-Benchmark** targets *pre-response road rage regulation* by reasoning about situational triggers **before** aggressive driving behaviors occur.  
+We introduce **Road Rage Reasoning** as a new task, release **RoadRageBench** with rich real-world annotations, conduct extensive evaluations of open-source Vision-Language Models (VLMs), and propose a **real-time VLM-based reasoning framework** to support proactive in-vehicle safety systems.
+
+---
+
 ## 🎯 Task Definition & Dataset
 
 ### Road Rage Reasoning Tasks
