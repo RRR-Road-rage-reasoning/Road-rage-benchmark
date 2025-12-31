@@ -1,6 +1,58 @@
-# Road-rage-benchmark
-**Road-Rage-Benchmark** targets *pre-response road rage regulation* by reasoning about situational triggers **before** aggressive driving behaviors occur.  
-We introduce **Road Rage Reasoning** as a new task, release **RoadRageBench** with rich real-world annotations, conduct extensive evaluations of open-source Vision-Language Models (VLMs), and propose a **real-time VLM-based reasoning framework** to support proactive in-vehicle safety systems.
+## 🎯 Task Definition & Dataset
+
+### Road Rage Reasoning Tasks
+
+Inspired by the human emotional response chain (**Situation → Attention → Appraisal → Response**), we define **Road Rage Reasoning (R³)** as proactively judging hazardous driving scenarios **before** aggressive reactions occur.  
+We design a **three-level progressive task framework** with dashcam video frames sampled at **2 FPS** as unified visual input:
+
+1. **Frame-level Environmental Cue Perception**  
+   Extract fine-grained environmental and traffic cues from individual frames, including:
+   - Physical environment: weather, time of day, road type, road condition  
+   - Traffic conditions: lane number, ego lane position/state, lane markings  
+   - Key surrounding objects: relative position, distance, and behaviors (e.g., lane cutting, sudden braking, jaywalking)
+
+2. **Video-level Event Recognition**  
+   Identify whether the following **9 interaction events** occur in a video:
+   1) Unsafe lane change  
+   2) Lane change without signaling  
+   3) Illegal lane change across solid lines  
+   4) Unsafe overtaking  
+   5) Sudden braking at close distance  
+   6) Pedestrians or non-motorized users crossing  
+   7) Repeated braking to obstruct traffic  
+   8) Repeated lane cutting  
+   9) Traffic congestion
+
+3. **Video-level Scene Classification**  
+   Each video is classified into three **independent binary categories**:
+   - **Dangerous**: direct safety threats (events 1–6)  
+   - **Aggressive**: intentional disruptive behaviors (events 7–8)  
+   - **Obstructive**: traffic efficiency reduction (event 9)
+
+---
+
+### RoadRageBench Dataset
+
+We construct **RoadRageBench**, the first real-world dataset dedicated to road rage reasoning, using a **three-step pipeline**:
+
+1. **Data Collection & Preliminary Annotation**  
+   Dashcam videos are collected from YouTube and Bilibili using targeted keywords (e.g., *road rage*, *unsafe driving*). Videos are filtered to ensure first-person view, clear visuals, consistent traffic rules, and clear road rage scenarios. Initial event and scene labels are assigned.
+
+2. **Personnel Review & Secondary Screening**  
+   Three reviewers with driving experience score anger intensity and scene clarity. Videos with low consensus or insufficient samples are removed, resulting in **81 road rage videos** covering all 9 events.
+
+3. **Frame-level Annotation**  
+   Videos are uniformly downsampled to **2 FPS**. Each frame is annotated with detailed environmental and traffic cues to support fine-grained perception tasks.
+
+To balance the dataset, **19 non-rage (safe driving) videos** are added with video-level labels only.
+
+**Final Dataset Statistics**:
+- **100 videos** (81 road rage + 19 non-rage)  
+- **2,299 frames**  
+- **22,000+ fine-grained annotations**
+
+RoadRageBench fully supports the reasoning chain:  
+**Environmental Cue Perception → Event Recognition → Scene Classification**, enabling systematic evaluation of VLMs for proactive in-car safety.
 
 ## 🧠VLM-based reasoning framework
 
