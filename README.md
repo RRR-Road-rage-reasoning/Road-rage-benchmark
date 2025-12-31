@@ -64,7 +64,8 @@ Each hazardous behavior category is detected **independently**, while sharing th
 ### Installation
 
 ```bash
-pip install -r requirements/x_requirements.txt
+cd requirements
+pip install -r x_requirements.txt
 ```
 
 ---
