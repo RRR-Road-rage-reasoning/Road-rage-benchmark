@@ -1,8 +1,7 @@
 # Road-rage-benchmark
 Road rage benchmark focuses on pre-response road rage regulation by reasoning about situational triggers before aggressive behaviors occur. We introduce Road Rage Reasoning tasks, RoadRageBench with rich annotations, extensive VLM evaluations, and a real-time VLM-based reasoning framework to advance proactive in-car safety systems.
-<img width="2475" height="1120" alt="fig3-framework_01" src="https://github.com/user-attachments/assets/b438fd22-4b74-45b5-88ed-b33139a191f7" />
 
-## 🧠Framework Overview
+## 🧠VLM-based reasoning framework
 
 ### Visual Feature Extraction
 
@@ -32,6 +31,8 @@ A lightweight **Multilayer Perceptron (MLP)** is used for scene classification:
   - FC → 3 (Dangerous / Aggressive / Obstructive)
 
 This design balances classification performance and real-time efficiency.
+
+<img width="2475" height="1120" alt="fig3-framework_01" src="https://github.com/user-attachments/assets/73fa6b98-7ab6-41be-ae7e-b186a324dd09" />
 
 ---
 
