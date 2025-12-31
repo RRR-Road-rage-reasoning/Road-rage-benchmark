@@ -131,7 +131,14 @@ python train_mlp.py
 
 Test Results(Example)
 
-<img width="977" height="466" alt="image" src="https://github.com/user-attachments/assets/aa188e38-b614-4c68-99be-5106147dcb96" />
+| Method                      | Dangerous Acc | Dangerous F1 | Aggressive Acc | Aggressive F1 | Obstructive Acc | Obstructive F1 |
+| --------------------------- | ------------- | ------------ | -------------- | ------------- | --------------- | -------------- |
+| **Qwen2.5-VL-32B-Instruct** | **100.0**     | **100.0**    | 64.71          | 50.00         | **82.35**       | **76.92**      |
+| Qwen2.5-VL-7B-Instruct      | 100.0         | 100.0        | 70.59          | 44.44         | 70.59           | 66.67          |
+| InternVL3-8B                | 88.24         | 93.75        | **70.59**      | **66.67**     | 82.35           | 76.92          |
+| LLaVA-onevision-qwen2-7B    | 100.0         | 100.0        | 64.71          | 0.00          | 64.71           | 0.00           |
+| LLaVA-NeXT-Video-7B         | 0.00          | 0.00         | 64.71          | 0.00          | 64.71           | 0.00           |
+
 
 ---
 
