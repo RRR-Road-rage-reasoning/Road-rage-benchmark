@@ -127,12 +127,8 @@ python train_mlp.py
 
 Test Results(Example)
 
-| Category    | Accuracy | F1-score |
-| ----------- | -------- | -------- |
-| Dangerous   | 94.12%   | 0.9697   |
-| Aggressive  | 88.24%   | 0.8000   |
-| Obstructive | 82.35%   | 0.7692   |
-| Normal      | 100.00%  | 1.0000   |
+<img width="945" height="413" alt="image" src="https://github.com/user-attachments/assets/3097b3bd-9bb9-46a8-bdfd-9f86acd3046c" />
+
 
 ---
 
