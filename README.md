@@ -155,7 +155,7 @@ During preprocessing, frames are **uniformly sampled to a fixed number (e.g., 20
 
 ### 1️⃣ Feature Extraction
 
-Extract visual features using the pretrained InternVL image encoder:
+Extract visual features using the pretrained VLM vision encoder:
 
 ```bash
 cd Visual feature extraction
@@ -171,7 +171,7 @@ The extracted features are stored as `.pt` files and reused for classifier train
 
 ### 2️⃣ Classification
 
-Train the lightweight temporal classification head on the extracted VLM features to perform binary detection of three road-rage hazardous behavior categories.
+Train the lightweight MLP on the extracted VLM features to perform binary detection of three road-rage hazardous behavior categories.
 
 ```bash
 python train_mlp.py
